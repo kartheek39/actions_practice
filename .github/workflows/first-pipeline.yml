@@ -1,0 +1,17 @@
+name: test pipeline
+
+on:
+  push:
+    branch:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+  steps:
+    - name: clone repos
+    - uses: actions/checkout@5
+
+    
+
